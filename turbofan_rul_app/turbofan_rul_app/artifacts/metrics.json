@@ -1,0 +1,43 @@
+{
+  "dataset": "FD001",
+  "k": 4,
+  "seed": 42,
+  "n_test_engines": 100,
+  "models": {
+    "Baseline (raw + rolling)": {
+      "rmse": 16.374474445519358,
+      "nasa_score": 810.5940944135701
+    },
+    "+ Discovered states": {
+      "rmse": 16.554036753190353,
+      "nasa_score": 827.4955289256001
+    },
+    "Control: random labels": {
+      "rmse": 16.866160708390986,
+      "nasa_score": 853.9509329836621
+    }
+  },
+  "delta_vs_baseline": {
+    "+ Discovered states": {
+      "delta_rmse": -0.17956230767099512,
+      "lo": -0.5655730318216052,
+      "hi": 0.19604403114825125
+    },
+    "Control: random labels": {
+      "delta_rmse": -0.4916862628716281,
+      "lo": -0.9351377685077483,
+      "hi": -0.10103165042106046
+    }
+  },
+  "state_profile": {
+    "Healthy": 114.64374403056351,
+    "Early wear": 93.4621435594887,
+    "Advanced degradation": 25.687731092436973,
+    "Near-failure": 16.414821124361158
+  },
+  "pca_explained_variance": [
+    0.4718413420067448,
+    0.12186465528182568,
+    0.05990577486728719
+  ]
+}
